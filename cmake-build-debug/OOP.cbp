@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="OOP"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="msvc8"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/sinne/CLionProjects/OOP/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\sinne\CLionProjects\OOP\cmake-build-debug\Makefile VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\sinne\CLionProjects\OOP\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\sinne\CLionProjects\OOP\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\sinne\CLionProjects\OOP\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="OOP">
+				<Option output="C:/Users/sinne/CLionProjects/OOP/cmake-build-debug/OOP.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/sinne/CLionProjects/OOP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:/Users/sinne/CLionProjects/OOP/cell"/>
+					<Add directory="C:/Users/sinne/CLionProjects/OOP/event"/>
+					<Add directory="C:/Users/sinne/CLionProjects/OOP/field"/>
+					<Add directory="C:/Users/sinne/CLionProjects/OOP/control"/>
+					<Add directory="C:/Users/sinne/CLionProjects/OOP/player"/>
+					<Add directory="C:/Users/sinne/CLionProjects/OOP/utils"/>
+					<Add directory="C:/Users/sinne/CLionProjects/OOP/logger"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\sinne\CLionProjects\OOP\cmake-build-debug\Makefile VERBOSE=1 OOP"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\sinne\CLionProjects\OOP\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\sinne\CLionProjects\OOP\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\sinne\CLionProjects\OOP\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="OOP/fast">
+				<Option output="C:/Users/sinne/CLionProjects/OOP/cmake-build-debug/OOP.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/sinne/CLionProjects/OOP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:/Users/sinne/CLionProjects/OOP/cell"/>
+					<Add directory="C:/Users/sinne/CLionProjects/OOP/event"/>
+					<Add directory="C:/Users/sinne/CLionProjects/OOP/field"/>
+					<Add directory="C:/Users/sinne/CLionProjects/OOP/control"/>
+					<Add directory="C:/Users/sinne/CLionProjects/OOP/player"/>
+					<Add directory="C:/Users/sinne/CLionProjects/OOP/utils"/>
+					<Add directory="C:/Users/sinne/CLionProjects/OOP/logger"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\sinne\CLionProjects\OOP\cmake-build-debug\Makefile VERBOSE=1 OOP/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\sinne\CLionProjects\OOP\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\sinne\CLionProjects\OOP\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\sinne\CLionProjects\OOP\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/sinne/CLionProjects/OOP/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\sinne\CLionProjects\OOP\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\sinne\CLionProjects\OOP\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\sinne\CLionProjects\OOP\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\sinne\CLionProjects\OOP\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/sinne/CLionProjects/OOP/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\sinne\CLionProjects\OOP\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\sinne\CLionProjects\OOP\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\sinne\CLionProjects\OOP\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\sinne\CLionProjects\OOP\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/cell/Cell.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/cell/Cell.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/cell/CellFeature.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/cell/CellFeature.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/cell/CellView.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/cell/CellView.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/control/CommandReader.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/control/CommandReader.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/control/ControlCommand.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/control/ControlCommand.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/control/ControlConfig.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/control/ControlConfig.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/control/Controller.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/control/Controller.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/control/Mediator.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/control/Mediator.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/event/EnemyEventGroup.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/event/EnemyEventGroup.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/event/Event.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/event/Event.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/event/Factory.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/event/Factory.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/event/PropertiesEventGroup.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/event/PropertiesEventGroup.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/event/UtilEventGroup.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/event/UtilEventGroup.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/field/Field.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/field/Field.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/field/FieldView.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/field/FieldView.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/logger/GameLog.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/logger/GameLog.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/logger/Logger.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/logger/Logger.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/logger/LoggerGroup.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/logger/LoggerGroup.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/logger/Observer.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/logger/Observer.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/player/PlayAction.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/player/PlayAction.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/player/Player.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/player/Player.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/starter.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="C:/Users/sinne/CLionProjects/OOP/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

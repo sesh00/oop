@@ -1,0 +1,108 @@
+{
+	"cmake" : 
+	{
+		"generator" : 
+		{
+			"multiConfig" : false,
+			"name" : "NMake Makefiles"
+		},
+		"paths" : 
+		{
+			"cmake" : "C:/Users/sinne/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/bin/cmake/win/bin/cmake.exe",
+			"cpack" : "C:/Users/sinne/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/bin/cmake/win/bin/cpack.exe",
+			"ctest" : "C:/Users/sinne/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/bin/cmake/win/bin/ctest.exe",
+			"root" : "C:/Users/sinne/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/bin/cmake/win/share/cmake-3.20"
+		},
+		"version" : 
+		{
+			"isDirty" : false,
+			"major" : 3,
+			"minor" : 20,
+			"patch" : 2,
+			"string" : "3.20.2",
+			"suffix" : ""
+		}
+	},
+	"objects" : 
+	[
+		{
+			"jsonFile" : "codemodel-v2-69da4aa248181174d708.json",
+			"kind" : "codemodel",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 2
+			}
+		},
+		{
+			"jsonFile" : "cache-v2-1701d4790f91b2798a57.json",
+			"kind" : "cache",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 0
+			}
+		},
+		{
+			"jsonFile" : "cmakeFiles-v1-0ec4465f6266e8b10f84.json",
+			"kind" : "cmakeFiles",
+			"version" : 
+			{
+				"major" : 1,
+				"minor" : 0
+			}
+		},
+		{
+			"jsonFile" : "toolchains-v1-005e3ccc5638b382dcdf.json",
+			"kind" : "toolchains",
+			"version" : 
+			{
+				"major" : 1,
+				"minor" : 0
+			}
+		}
+	],
+	"reply" : 
+	{
+		"cache-v2" : 
+		{
+			"jsonFile" : "cache-v2-1701d4790f91b2798a57.json",
+			"kind" : "cache",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 0
+			}
+		},
+		"cmakeFiles-v1" : 
+		{
+			"jsonFile" : "cmakeFiles-v1-0ec4465f6266e8b10f84.json",
+			"kind" : "cmakeFiles",
+			"version" : 
+			{
+				"major" : 1,
+				"minor" : 0
+			}
+		},
+		"codemodel-v2" : 
+		{
+			"jsonFile" : "codemodel-v2-69da4aa248181174d708.json",
+			"kind" : "codemodel",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 2
+			}
+		},
+		"toolchains-v1" : 
+		{
+			"jsonFile" : "toolchains-v1-005e3ccc5638b382dcdf.json",
+			"kind" : "toolchains",
+			"version" : 
+			{
+				"major" : 1,
+				"minor" : 0
+			}
+		}
+	}
+}
