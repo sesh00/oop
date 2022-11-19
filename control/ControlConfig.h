@@ -14,7 +14,7 @@ typedef std::map<ActionPrefix, std::pair<int, PlayAction*>> ActionMap;
 
 class ControlConfig: public Subscriber{
 protected:
-
+    bool isRed = false;
     std::map<ActionPrefix, int> defaultConfig{
             {UP, 0x26},
             {DOWN, 0x28},
@@ -36,7 +36,7 @@ protected:
     void setDefault();
     void checkConfig();
 public:
-    virtual ActionMap getConfig() = 0;
+    virtual ActionMap initConfig() = 0;
     ~ControlConfig() override = default;
 };
 
@@ -47,7 +47,7 @@ private:
     bool inConfig(int key);
 public:
     explicit FileConfig(const std::string& filename);
-    ActionMap getConfig() override ;
+    ActionMap initConfig() override ;
     ~FileConfig() override;
 };
 

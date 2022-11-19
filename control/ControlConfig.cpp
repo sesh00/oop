@@ -1,6 +1,7 @@
 #include "ControlConfig.h"
 
 void ControlConfig::setDefault() {
+    isRed = true;
     InitMessage(ERRORMESSAGE,"Default commands is set");
     for (auto& pair : config)
     {
@@ -47,13 +48,13 @@ bool FileConfig::inConfig(int key) {
     return true;
 }
 
-ActionMap FileConfig::getConfig() {
+ActionMap FileConfig::initConfig() {
+    if (isRed) return config;
     if(!file.is_open()){
         setDefault();
         InitMessage(ERRORMESSAGE,"1");
         return config;
     }
-
     std::string line;
     ActionPrefix prefix;
     int key = 0;
@@ -91,6 +92,7 @@ ActionMap FileConfig::getConfig() {
         }
     }
     checkConfig();
+    isRed = true;
     return config;
 }
 

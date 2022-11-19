@@ -9,7 +9,7 @@ Controller::Controller(Logger* logger, const Prefix* prefixList,
     this->field = new Field(this, fieldWidth, fieldHeight);
     this->fieldView = FieldView(field);
 
-    this->controlConfig = new FileConfig(R"(C:\Users\sinne\CLionProjects\OOP\control\config.txt)");
+    this->controlConfig = new FileConfig("config.txt");
 
     observerList = {new Observer(*player, *logger),
                     new Observer(*field, *logger),
@@ -38,7 +38,7 @@ Controller::Controller(Logger* logger, const Prefix* prefixList,
         InitMessage(ERRORMESSAGE, "Size of field has an incorrect value");
 
 
-    for(auto action : controlConfig->getConfig()){
+    for(auto action : controlConfig->initConfig()){
         auto pair = action.second;
         pair.second->init(player, field);
     }
@@ -68,7 +68,7 @@ void Controller::showProperties() {
 }
 
 void Controller::takeAction(int actionIndex) {
-    for(auto action : controlConfig->getConfig()){
+    for(auto action : controlConfig->initConfig()){
         auto pair = action.second;
         if (pair.first == actionIndex)
             pair.second->action();
@@ -76,7 +76,7 @@ void Controller::takeAction(int actionIndex) {
 }
 
 void Controller::takeAction(ActionPrefix actionPrefix) {
-    for(auto action : controlConfig->getConfig()){
+    for(auto action : controlConfig->initConfig()){
         auto pair = action.second;
         if (action.first == actionPrefix)
             pair.second->action();

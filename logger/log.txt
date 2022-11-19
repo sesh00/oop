@@ -5400,3 +5400,96 @@ STATEMESSAGE: New feature has been created
 GAMEMESSAGE: New event has been emitted
 ERRORMESSAGE: Attempt to enter an impassable cell
 ERRORMESSAGE: Attempt to enter an impassable cell
+ERRORMESSAGE: Two or more prefixes in file
+ERRORMESSAGE: Default commands is set
+ERRORMESSAGE: Two or more prefixes in file
+ERRORMESSAGE: Default commands is set
+ERRORMESSAGE: Two or more prefixes in file
+ERRORMESSAGE: Default commands is set
+ERRORMESSAGE: Two or more prefixes in file
+ERRORMESSAGE: Default commands is set
+ERRORMESSAGE: Two or more prefixes in file
+ERRORMESSAGE: Default commands is set
+ERRORMESSAGE: Two or more prefixes in file
+ERRORMESSAGE: Default commands is set
+ERRORMESSAGE: Default commands is set
+ERRORMESSAGE: 1
+STATEMESSAGE: New feature has been created
+
+GAMEMESSAGE: New event has been emitted
+STATEMESSAGE: New feature has been created
+
+GAMEMESSAGE: New event has been emitted
+STATEMESSAGE: New feature has been created
+
+GAMEMESSAGE: New event has been emitted
+STATEMESSAGE: New feature has been created
+
+GAMEMESSAGE: New event has been emitted
+STATEMESSAGE: New feature has been created
+
+GAMEMESSAGE: New event has been emitted
+STATEMESSAGE: New feature has been created
+
+GAMEMESSAGE: New event has been emitted
+STATEMESSAGE: New feature has been created
+
+GAMEMESSAGE: New event has been emitted
+STATEMESSAGE: New feature has been created
+
+GAMEMESSAGE: New event has been emitted
+GAMEMESSAGE: Health has been changed
+STATEMESSAGE: New feature has been created
+
+GAMEMESSAGE: New event has been emitted
+STATEMESSAGE: New feature has been created
+
+GAMEMESSAGE: New event has been emitted
+STATEMESSAGE: New feature has been created
+
+GAMEMESSAGE: New event has been emitted
+GAMEMESSAGE: Health has been changed
+STATEMESSAGE: New feature has been created
+
+GAMEMESSAGE: New event has been emitted
+STATEMESSAGE: New feature has been created
+
+GAMEMESSAGE: New event has been emitted
+STATEMESSAGE: New feature has been created
+
+GAMEMESSAGE: New event has been emitted
+GAMEMESSAGE: Health has been changed
+STATEMESSAGE: New feature has been created
+
+GAMEMESSAGE: New event has been emitted
+GAMEMESSAGE: Health has been changed
+STATEMESSAGE: New feature has been created
+
+GAMEMESSAGE: New event has been emitted
+STATEMESSAGE: New feature has been created
+
+GAMEMESSAGE: New event has been emitted
+STATEMESSAGE: New feature has been created
+
+GAMEMESSAGE: New event has been emitted
+GAMEMESSAGE: Health has been changed
+STATEMESSAGE: New feature has been created
+
+GAMEMESSAGE: New event has been emitted
+ERRORMESSAGE: Two or more prefixes in file
+ERRORMESSAGE: Default commands is set
+ERRORMESSAGE: Two or more prefixes in file
+ERRORMESSAGE: Default commands is set
+ERRORMESSAGE: Two or more prefixes in file
+ERRORMESSAGE: Default commands is set
+ERRORMESSAGE: Two or more prefixes in file
+ERRORMESSAGE: Default commands is set
+ERRORMESSAGE: Two or more prefixes in file
+ERRORMESSAGE: Default commands is set
+ERRORMESSAGE: Two or more prefixes in file
+ERRORMESSAGE: Default commands is set
+ERRORMESSAGE: Default commands is set
+ERRORMESSAGE: This key already in use
+ERRORMESSAGE: Attempt to enter an impassable cell
+ERRORMESSAGE: Default commands is set
+ERRORMESSAGE: This key already in use
