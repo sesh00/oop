@@ -1,121 +1,52 @@
 #include <iostream>
-#include <fstream>
-#include <list>
-#include <map>
+#include <vector>
+#include <algorithm>
 
-class LoggerGroup{
-public:
-     virtual LoggerGroup &operator<<(const char * t) =0;
-};
+using Data = std::vector<int>;
 
-class FileLogger: public LoggerGroup{
+template <size_t number, int init = 0, int step = 1>
+class GenWithStep{
 public:
-    explicit FileLogger(std::ofstream* ofs_): ofs(ofs_) {
-        if (!ofs->is_open()) {
-            throw std::runtime_error("file open failure");
+    static void fill(Data& d){
+        int current_value{init};
+        for(size_t i = 0; i < number; ++i){
+            d.push_back(current_value);
+            current_value += step;
         }
     }
-    ~FileLogger() {
-        ofs->close();
-    }
+};
 
-    FileLogger &operator<<(const char *t) override {
-        if(ofs->is_open()){
-            try{
-                *ofs << t;
-            }catch(std::exception const& e){
-                cout << "There was an error: " << e.what() << endl;
-            }
-        } else {
-            throw std::runtime_error("file write failure");
+template <size_t number>
+class GenWithEven{
+public:
+    static void fill(Data& d){
+        for(size_t i=0; i < number; i++){
+            d.push_back(i * 2);
         }
-        return *this;
     }
-
-private:
-    std::ofstream* ofs;
 };
 
-class ConsoleLogger: public LoggerGroup {
+template <typename ... Rules>
+class VectorGenerator{
 public:
-    explicit ConsoleLogger(std::ostream* os_): os(os_) {}
-
-    ~ConsoleLogger() = default;
-
-    ConsoleLogger &operator<<(const char *t) override {
-        *os << t;
-        return *this;
-    }
-private:
-    std::ostream* os;
-};
-
-
-struct LoggingLevel{
-    enum Level {
-        TRACE, DEBUG, INFO, WARNING, ERROR, FATAL
-    };
-    std::map<Level, std::string> levelMap{
-        {TRACE, "TRACE "},
-        {DEBUG, "DEBUG "},
-        {INFO, "INFO "},
-        {WARNING, "WARNING "},
-        {ERROR,"ERROR "},
-        {FATAL, "FATAL "}
-    };
-    std::string getLevel(Level level){
-        return levelMap[level];
+    Data generate(){
+        Data new_data;
+        (Rules::fill(new_data),...);
+        return new_data;
     }
 };
 
-class Message{
-public:
-    Message(LoggingLevel::Level level_, std::string text_):
-            level(level_), text(std::move(text_)) {
-        text = loggingLevel.getLevel(level) + text;
-    };
-    char* getMessage(){
-        char *text_ = text.data();
-        return text_;
-    }
-private:
-    std::string text;
-    LoggingLevel loggingLevel;
-    LoggingLevel::Level level;
-};
+void print(const Data& d){
+    std::for_each(d.begin(), d.end(), [](auto x){std::cout << x << ' ';});
+    std::cout << '\n';
+}
 
-class Logger {
-    std::list<LoggerGroup*> m_Streams;
-
-public:
-    void attach(LoggerGroup *os) {
-        m_Streams.push_back(os);
-    }
-
-    Logger &operator<<(Message message) {
-
-        for (auto & m_Stream : m_Streams){
-           *m_Stream << message.getMessage();
-        }
-
-        return *this;
-    }
-};
-
-
-int main() {
-    std::ofstream fOut(R"(C:\Users\sinne\CLionProjects\OOP\utils\log.txt)");
-    Logger logger;
-
-    logger.attach(new ConsoleLogger(&std::cout));
-    logger.attach(new FileLogger(&fOut));
-    logger.attach(new ConsoleLogger(&std::cerr));
-
-    logger << Message(LoggingLevel::TRACE,"test1\n");
-    logger << Message(LoggingLevel::DEBUG,"test2\n");
-    logger << Message(LoggingLevel::INFO,"test3\n");
-    logger << Message(LoggingLevel::WARNING,"test4\n");
-    logger << Message(LoggingLevel::ERROR,"test5\n");
-    logger << Message(LoggingLevel::FATAL,"test6\n");
-
+int main(){
+    VectorGenerator<GenWithEven<4>, GenWithStep<5,5,-1>> vec_gen;
+    Data d1 = vec_gen.generate();
+    print(d1);
+    VectorGenerator<GenWithStep<10, -4>, GenWithEven<10>> vec_gen2;
+    Data d2 = vec_gen2.generate();
+    print(d2);
+    return 0;
 }
